@@ -2,26 +2,215 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+@layer components {
+  .Display-1-Bold {
+    @apply font-bold text-42 leading-48;
+  }
+  .Display-1-Medium {
+    @apply font-medium text-42 leading-48;
+  }
+  .Display-2-Bold {
+    @apply font-bold text-36 leading-40;
+  }
+  .Display-3-Bold {
+    @apply font-bold text-32 leading-36;
+  }
+  .Display-3-Medium {
+    @apply font-medium text-32 leading-36;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+
+  .Title-1-Bold {
+    @apply font-bold text-24 leading-28;
+  }
+  .Title-2-Bold {
+    @apply font-bold text-20 leading-24;
+  }
+  .Title-3-Bold {
+    @apply font-bold text-18 leading-22;
+  }
+  .Title-3-Medium {
+    @apply font-medium text-18 leading-22;
+  }
+  .Title-4-Bold {
+    @apply font-bold text-16 leading-20;
+  }
+  .Title-4-SemiBold {
+    @apply font-bold text-16 leading-20;
+  }
+  .Title-4-Medium {
+    @apply font-bold text-16 leading-20;
+  }
+
+
+  .Text-Neutral-Strong{
+    @apply text-neutral-700
+  }
+  .Text-Neutral-Medium{
+    @apply text-neutral-500
+  }
+  .Text-Neutral-Weak{
+    @apply text-neutral-400
+  }
+  .Text-Neutral-Inverse {
+    @apply text-mono-50
+  }
+  .Text-Primary {
+    @apply text-orange-700
+  }
+  .Text-Secondary {
+    @apply text-teal-600
+  }
+  .Text-Positive {
+    @apply text-green-600
+  }
+  .Text-Notice {
+    @apply text-yellow-500
+  }
+  .Text-Negative {
+    @apply text-red-600
+  }
+
+
+  .Border-Neutral-Strong {
+    @apply border border-neutral-700
+  }
+  .Border-Neutral-Medium {
+    @apply border border-neutral-400
+  }
+  .Border-Neutral-Weak {
+    @apply border border-neutral-300
+  }
+  .Border-Neutral-Inverse {
+    @apply border border-mono-50
+  }
+  .Border-Primary {
+    @apply border border-orange-700
+  }
+  .Border-Secondary {
+    @apply border border-teal-600
+  }
+  .Border-Positive {
+    @apply border border-green-600
+  }
+  .Border-Notice {
+    @apply border border-yellow-500
+  }
+  .Border-Negative {
+    @apply border border-red-600
+  }
+
+
+  .BG-Neutral-Strong{
+    @apply bg-neutral-700
+  }
+  .BG-Neutral-Medium{
+    @apply bg-neutral-500
+  }
+  .BG-Neutral-Weak{
+    @apply bg-neutral-400
+  }
+  .BG-Neutral-Inverse {
+    @apply bg-mono-50
+  }
+  .BG-Offset-Strong {
+    @apply bg-mono-200
+  }
+  .BG-Offset-Weak {
+    @apply bg-mono-100
+  }
+  .BG-Primary-Strong {
+    @apply bg-orange-700
+  }
+  .BG-Primary-Weak {
+    @apply bg-blue-200
+  }
+  .BG-Secondary-Strong {
+    @apply bg-teal-600
+  }
+  .BG-Secondary-Weak {
+    @apply bg-teal-200
+  }
+  .BG-Positive-Strong {
+    @apply bg-green-600
+  }
+  .BG-Positive-Weak {
+    @apply bg-green-200
+  }
+  .BG-Notice-Strong {
+    @apply bg-yellow-500
+  }
+  .BG-Notice-Weak {
+    @apply bg-yellow-200
+  }
+  .BG-Negative-Strong {
+    @apply bg-red-600
+  }
+  .BG-Negative-Weak {
+    @apply bg-red-200
+  }
+
+  
+  .Icon-Neutral-Strong{
+    @apply bg-neutral-700
+  }
+  .Icon-Neutral-Medium{
+    @apply bg-neutral-500
+  }
+  .Icon-Neutral-Weak{
+    @apply bg-neutral-400
+  }
+  .Icon-Neutral-Inverse {
+    @apply bg-mono-50
+  }
+  .Icon-Primary {
+    @apply bg-orange-700
+  }
+  .Icon-Secondary {
+    @apply bg-teal-600
+  }
+  .Icon-Positive {
+    @apply bg-green-600
+  }
+  .Icon-Notice {
+    @apply bg-yellow-500
+  }
+  .Icon-Negative {
+    @apply bg-red-600
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+
+@layer components {
+  .Btn-Size-Large{
+    @apply w-80 h-12 rounded-md text-base font-semibold bg-orange-700
+  }
+  .Btn-Size-Small{
+    @apply w-16 h-8 rounded-3xl
+  }
+  .Btn-Size-Medium{
+    @apply w-80 h-10 rounded-md
+  }
+
+
+  .Btn-Emphasis-High-Enabled-Yes{
+    @apply BG-Primary-Strong Text-Neutral-Inverse
+  }
+  .Btn-Emphasis-Medium-Enabled-Yes{
+    @apply BG-Offset-Weak Text-Primary
+  }
+  .Btn-Emphasis-Low-Enabled-Yes{
+    @apply Text-Primary Border-Primary
+  }
+
+  .Btn-Emphasis-High-Enabled-No{
+    @apply BG-Offset-Weak Text-Neutral-Weak
+  }
+  .Btn-Emphasis-Medium-Enabled-No{
+    @apply BG-Offset-Weak Text-Neutral-Weak
+  }
+  .Btn-Emphasis-Low-Enabled-No{
+    @apply Text-Neutral-Weak
+  }
+
 }

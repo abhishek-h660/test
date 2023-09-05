@@ -1,0 +1,10 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="24/system/bounding">
+<mask id="mask0_7_276" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="2" y="2" width="20" height="20">
+<path id="Rectangle 4 (Stroke)" fill-rule="evenodd" clip-rule="evenodd" d="M2 2H4.29167V3.5H3.5V4.29167H2V2ZM7.375 2H10.4583V3.5H7.375V2ZM13.5417 2H16.625V3.5H13.5417V2ZM19.7083 2H22V4.29167H20.5V3.5H19.7083V2ZM2 10.4583V7.375H3.5V10.4583H2ZM22 7.375V10.4583H20.5V7.375H22ZM2 16.625V13.5417H3.5V16.625H2ZM22 13.5417V16.625H20.5V13.5417H22ZM2 19.7083H3.5V20.5H4.29167V22H2V19.7083ZM22 19.7083V22H19.7083V20.5H20.5V19.7083H22ZM10.4583 22H7.375V20.5H10.4583V22ZM16.625 22H13.5417V20.5H16.625V22Z" fill="#1F1F1F"/>
+</mask>
+<g mask="url(#mask0_7_276)">
+<path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M24 0H0V24H24V0Z" fill="#8E8E8E"/>
+</g>
+</g>
+</svg>

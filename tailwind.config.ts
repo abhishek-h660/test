@@ -1,20 +1,123 @@
-import type { Config } from 'tailwindcss'
-
-const config: Config = {
+/** @type {import('tailwindcss').Config} */
+module.exports = {
   content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    "./src/pages/**/*.{js,ts,jsx,tsx}",
+    "./src/components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    colors:{
+      'neutral':{
+        700:'#1F1F1F',
+        600:'#4B4B4B',
+        500:'#4B4B4B',
+        400:'#CACACA',
+        300:'#E1E1E1',
+        200:'#EEEEEE',
+        100:'#F5F5F5',
+        50:'#FAFAFA',
+      },
+      'mono':{
+        700:'#8da1b2',
+        600:'#8da1b2',
+        500:'#8da1b2',
+        400:'#8da1b2',
+        300:'#8da1b2',
+        200:'#deecf7',
+        100:'#f6faff',
+        50:'#ffffff',
+      },
+      'orange':{
+        700:'#FE632F',
+        600:'#FF8156',
+        500:'#FFA487',
+        400:'#FFC8B6',
+        300:'#FFE1D6',
+        200:'#FFF2EE',
+        100:'#FFF6F3',
+        50:'#FFFCFC',
+      },
+      'teal':{
+        700:'#00ABB6',
+        600:'#15C5CE',
+        500:'#47CFD6',
+        400:'#7DDDE1',
+        300:'#B0EBEC',
+        200:'#DFF7F7',
+        100:'#EEFCFC',
+        50:'#F9FFFF',
+      },
+      'red':{
+        700:'#EC2D30',
+        600:'#F64C4C',
+        500:'#EB6F70',
+        400:'#F49898',
+        300:'#FFCCD2',
+        200:'#FFEBEE',
+        100:'#FEF2F2',
+        50:'#FFFBFB',
+      },
+      'yellow':{
+        700:'#FE9B0E',
+        600:'#FFAD0D',
+        500:'#FFC62B',
+        400:'#FFDD82',
+        300:'#FFEAB3',
+        200:'#FFF7E1',
+        100:'#FFF9EE',
+        50:'#FFFDFA',
+      },
+      'green':{
+        700:'#0C9D61',
+        600:'#47B881',
+        500:'#6BC497',
+        400:'#97D4B4',
+        300:'#C0E5D1',
+        200:'#E5F5EC',
+        100:'#F2FAF6',
+        50:'#FBFEFC',
+      },
+      'blue':{
+        700:'#3A70E2',
+        600:'#3B82F6',
+        500:'#4BA1FF',
+        400:'#93C8FF',
+        300:'#BDDDFF',
+        200:'#E4F2FF',
+        100:'#F1F8FF',
+        50:'#F8FCFF',
+      },
+      'overlay':{
+        700:"#3A70E2E6",
+        600:"#3B82F6CC",
+        500:"#4BA1FFB3",
+        400:"#93C8FF99",
+        300:"#BDDDFF80",
+        200:"#E4F2FF66",
+        100:"#F1F8FF4D",
+        50:"#F8FCFF33"
+      }
+    },
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      fontSize: {
+        '42': '42px',
+        '36': '36px',
+        '32': '32px',
+        '24': '24px',
+        '20': '20px',
+        '18': '18px', 
+        '16': '16px',
+      },
+      lineHeight: {
+        '48': '48px',
+        '40': '40px',
+        '36': '36px',
+        '28': '28px',
+        '24': '24px',
+        '22': '22px',
+        '20': '20px',
+        
       },
     },
   },
   plugins: [],
 }
-export default config
